@@ -61,7 +61,7 @@ int _Execve(char *executablePath, char *argv[], char *envp[])
 
 	if (result == -1)
 	{
-		perror("The command wasn't found: ");
+		perror("The command wasn't found:");
 	}
 	return (result);
 }
