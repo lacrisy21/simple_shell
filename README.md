@@ -109,7 +109,8 @@ Check who contributed to this project [here](./AUTHORS)
 😊
 
 ## Check our blog
- [What happens when you type ls -l in the shell](./https://www.linkedin.com/pulse/what-happens-when-you-type-ls-l-shell-laura-cristina-gil-posada/?trackingId=qEPSMe1SQL2gKWvJTSxVwg%3D%3D)
+ <a href="https://www.linkedin.com/pulse/what-happens-when-you-type-ls-l-shell-laura-cristina-gil-posada/" target="_blank"> What happens when you type ls -l in the shell
+</a>
 ---
 <p align="center">
   <h2 align="center">Made by:</h2>
