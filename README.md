@@ -15,6 +15,10 @@ Creation of a simple shell using C programming language, implementing peer progr
 1|[README.md](./README.md)| You are reading it
 2|[man_1_simple_shell](./man_1_simple_shell)| Manual of the Shell
 3|[AUTHORS](./AUTHORS)| Lists all individuals who contributed content to the repository
+2|[elysium.h](./elysium.h)| Header containing the function prtotypes
+2|[eurydice.c](./eurydice.c)| Functions and system calls for the shell
+2|[hypnos.c](./hypnos.c)| Executions for the shell
+2|[thanatos.c](./thanatos.c)| Simple Shell
 
 ## Description 🚀
 
@@ -37,66 +41,75 @@ Creation of a simple shell using C programming language, implementing peer progr
 
 |Functions and system calls
 ---|---|---
-|access 
-|chdir 
-|close 
-|closedir
-|execve
-|exit 
-|_exit 
-|fflush 
-|fork 
-|free 
-|getcwd
-|getline 
-|isatty 
-|kill 
-|malloc 
-|open 
-|opendir 
-|perror 
-|read 
-|readdir 
-|signal 
-|stat (__xstat) 
-|lstat (__lxstat) 
-|fstat (__fxstat) 
-|strtok 
-|wait 
-|waitpid
-|wait3 
-|wait4 
-|write 
+- access 
+- chdir 
+- close 
+- closedir
+- execve
+- exit 
+- _exit 
+- fflush 
+- fork 
+- free 
+- getcwd
+- getline 
+- isatty 
+- kill 
+- malloc 
+- open 
+- opendir 
+- perror 
+- read 
+- readdir 
+- signal 
+- stat (__xstat) 
+- lstat (__lxstat) 
+- fstat (__fxstat) 
+- strtok 
+- wait 
+- waitpid
+- wait3 
+- wait4 
+- write 
 
 ## Deployment ⚙️
 
-#### Add the functions to run in the Shell here
+#### Requirements
+ - Gcc >= 4.8.4
 
-#### To print a string:
+#### Steps to compile the shell and execute.
+ - `git clone https://github.com/lacrisy21/simple_shell.git`
+ - `cd simple_shell`
+ - `gcc -Wall -Werror -Wextra -pedantic *.c -o thanatos`
+ - `./thanatos`
+ 
+ #### Add examples
+
 ```
 
 ```
 ---
 
 ### Flowchart 🔩
-
 <p align="center">
-  <img src="Flowchart" width="800"/>
- <h1 align="center">Simulated Printf function</h1>
+  <img src="https://github.com/lacrisy21/README-stuff/blob/main/Flowchart_Simple_shell.jpg" width="800"/>
+ <h1 align="center">Simple Shell</h1>
  <br>
  </p>
 </p>
 
 ## Built with 🛠️
- C programming Language
- Visual Studio Code
- For Holberton Schoool
- Cohort 13
+ - C programming Language
+ - Visual Studio Code
+ - For Holberton Schoool, Cohort 13
 
 ## Autors ✒️
 
-Check who contributed to this project [here](/.https://github.com/lacrisy21/simple_shell/graphs/contributors)
+Check who contributed to this project [here](./AUTHORS)
 😊
+
+## Check our blog
+ [What happens when you type ls -l in the shell](./https://www.linkedin.com/pulse/what-happens-when-you-type-ls-l-shell-laura-cristina-gil-posada/?trackingId=qEPSMe1SQL2gKWvJTSxVwg%3D%3D)
 ---
 <p align="center">
   <h2 align="center">Made by:</h2>
