@@ -1,20 +1,47 @@
 .\" Manpage for Simple Shell
 .\" Contact 1978@holbertonschool.com 2271@holbertonschool.com to correct errors or typos.
-.TH man 1 "26 de Noviembre 2020" "1.0" "Simple Shell man page"
+.TH man 1 "27 de Noviembre 2020" "1.0" "Simple Shell man page"
 .SH NAME
 Simple Shell \- command line interpreter
 .SH SYNOPSIS
-.B ./hsh 
+.B ./thanatos 
 [command] [options]
 .SH DESCRIPTION
 Command line interpreter similar to Bash. Final project for Holberton School - 1st trimester. Functional shell program. 
+If no args are present and if the standard input of the shell is connected to a terminal, the shell is considered an interactive shell.  An interactive shell generally prompts before each command and handles programming and commanderrors differently (as described below).  When first starting, the shell inspectsargument 0, and if it begins with a dash ‘-’, the shell is also considered a login shell.  This is normally doneautomatically by the system when the user first logs in.  A login shell first readscommands from the files /etc/profile and .profile if they exist.  If the environment variable ENV is set on entry to aninteractive shell, or is set in the .profile of a login shell, the shell next readscommands from the file named in ENV.  Therefore, a user should place commands that are to be executed only at login time in the profile file, and commands that are executed for every interactive shell inside the ENVfile.  To set the ENV variable to some file, place the following line in your .profile of your home directory
 .br
+.SS Simple Commands
+.PP
+If a simple command has been recognized, the shell execute the command found in program.
 .B Return value
 
-.SH OPTIONS
+.SS Path Search
+.PP
+When locating a command, the shell first looks to see if it has a shell function by that name.Then it looks for a builtin command by that name.  
+.SS Command  Exit Status
+.PP 
+Each command has an exit status that can influence the behaviour of other shell commands.  The paradigm is that a command exits with zero for normal or success, and non-zero forfailure,error, or a false indication.  The man page for each command should indicate the variousexit codes and what they mean.  Additionally, the builtin commands return exit codes, as does an executed shell function.
 
-.SH Built-in Functions
- 
+If a command consists entirely of variable assignments then the exit status of thecommand is that of the last command substitution if any, otherwise 0.
+
+Errors that are detected by the shell, such as a syntax error, will cause the shell to exit with a non-zero exit status.  If the shell is not an interactive shell, the execution of the shell file will be aborted.  Otherwise the shell will return the exit status of the lastcommand executed, or if the exit builtin is used with a numeric argument, it will return the argument.
+
+.SH EXAMPLES
+.RS
+.B
+ $./thanatos
+.br
+simple_shell]$ ls
+.br
+AUTHORS    eurydice.c   hypnos.c            README.md
+elysium.h  executables  man_1_simple_shell  thanatos.c
+
+$./thanatos
+.br
+simple_shell]\$ echo $PATH
+.br
+/home/vagrant/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/home/vagrant/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
 
 .SH SEE ALSO
 Sh
