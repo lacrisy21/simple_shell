@@ -87,17 +87,13 @@ Creation of a simple shell using C programming language, implementing peer progr
 
 ```
 $./thanatos
-```
 simple_shell]$ ls
-```
 AUTHORS    eurydice.c   hypnos.c            README.md
 elysium.h  executables  man_1_simple_shell  thanatos.c
 ```
-
+```
 $./thanatos
-```
 simple_shell]\$ echo $PATH
-```
 /home/vagrant/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/home/vagrant/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 ```
 ---
