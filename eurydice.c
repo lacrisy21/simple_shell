@@ -40,7 +40,7 @@ void OnDispose(int charactersRead, char *buffer)
 	if (charactersRead == -1)
 	{
 		free(buffer);
-		write(1, "\n", 2);
+		/*write(1, "\n", 1);*/
 		exit(0);
 	}
 }
